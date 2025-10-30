@@ -1,3 +1,72 @@
+# IOC Reputation Dashboard — Frontend
+
+This repository folder contains the Next.js frontend for the IOC Reputation Dashboard. It provides a user interface for single IOC lookups, bulk uploads, file uploads, and visual analytics.
+
+Quick overview
+
+- Framework: Next.js (App Router)
+- Language: TypeScript
+- Dev server: runs on port 3001 by default in development (see `package.json`)
+
+Prerequisites
+
+- Node.js 18+ and npm 8+ installed
+
+Environment
+
+- Configuration is driven by environment variables. Create a `.env.local` in this folder for local development. Example variables used by the app:
+
+```
+NEXT_PUBLIC_API_URL=http://localhost:3000
+```
+
+Install dependencies
+
+```bash
+cd frontend
+npm install
+```
+
+Run in development
+
+```bash
+cd frontend
+npm run dev
+```
+
+Build for production
+
+```bash
+cd frontend
+npm run build
+npm start
+```
+
+Testing
+
+```bash
+cd frontend
+npm test
+```
+
+Important notes
+
+- Do not commit `.env.local` or any API keys. Use `.env.example` to share variable names without secrets.
+- The frontend expects the backend API to be reachable at `NEXT_PUBLIC_API_URL`.
+- File uploads use a `file` field in multipart form data. Do not set the `Content-Type` header manually when using `fetch` or `axios` with a `FormData` instance — the browser will set the proper boundary automatically.
+
+Contributing
+
+- Follow TypeScript and linting rules. Add tests for new features and update documentation.
+
+Troubleshooting
+
+- If you see CORS errors, verify the backend `FRONTEND_URL`/CORS settings match the frontend address and that both servers are running.
+
+License
+
+- This project is licensed under the MIT License. See the top-level `LICENSE` file.
+
 # IOC Reputation Dashboard
 
 A comprehensive web-based Indicators of Compromise (IOC) analysis platform that enables security professionals to analyze the reputation of various IOCs using multiple threat intelligence sources.
