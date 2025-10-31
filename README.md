@@ -171,7 +171,7 @@ npm run dev
 
 ### 5. Access the Dashboard
 
-Open your browser and navigate to `http://localhost:3001`
+Open your browser and navigate to `http://localhost:8080`
 
 ## 🔧 Configuration
 
