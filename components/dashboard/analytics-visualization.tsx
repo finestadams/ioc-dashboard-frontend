@@ -543,9 +543,9 @@ export function AnalyticsVisualization() {
                       <div className="text-sm font-medium text-red-600">
                         {result.confidence}%
                       </div>
-                      <div className="text-xs text-red-500">
+                      {/* <div className="text-xs text-red-500">
                         {result.detectionCount}/{result.totalEngines}
-                      </div>
+                      </div> */}
                     </div>
                   </div>
                 ))}

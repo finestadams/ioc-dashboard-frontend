@@ -31,20 +31,20 @@ export function formatCategory(category: IOCCategory): {
 } {
   switch (category) {
     case IOCCategory.MALWARE:
-      return { label: 'Malware', icon: '🦠', color: 'text-red-600' };
+      return { label: 'Malware', icon: '', color: 'text-red-600' };
     case IOCCategory.PHISHING:
-      return { label: 'Phishing', icon: '🎣', color: 'text-orange-600' };
+      return { label: 'Phishing', icon: '', color: 'text-orange-600' };
     case IOCCategory.RANSOMWARE:
-      return { label: 'Ransomware', icon: '🔒', color: 'text-red-800' };
+      return { label: 'Ransomware', icon: '', color: 'text-red-800' };
     case IOCCategory.BOTNET:
-      return { label: 'Botnet', icon: '🤖', color: 'text-purple-600' };
+      return { label: 'Botnet', icon: '', color: 'text-purple-600' };
     case IOCCategory.C2:
-      return { label: 'C2 Server', icon: '📡', color: 'text-blue-600' };
+      return { label: 'C2 Server', icon: '', color: 'text-blue-600' };
     case IOCCategory.SPAM:
-      return { label: 'Spam', icon: '📧', color: 'text-yellow-600' };
+      return { label: 'Spam', icon: '', color: 'text-yellow-600' };
     case IOCCategory.UNKNOWN:
     default:
-      return { label: 'Unknown', icon: '❓', color: 'text-gray-600' };
+      return { label: 'Unknown', icon: '', color: 'text-gray-600' };
   }
 }
 
@@ -57,17 +57,17 @@ export function formatIOCType(type: IOCType): {
 } {
   switch (type) {
     case IOCType.HASH:
-      return { label: 'File Hash', icon: '#️⃣' };
+      return { label: 'File Hash', icon: '#️' };
     case IOCType.URL:
-      return { label: 'URL', icon: '🔗' };
+      return { label: 'URL', icon: '' };
     case IOCType.IP:
-      return { label: 'IP Address', icon: '🌐' };
+      return { label: 'IP Address', icon: '' };
     case IOCType.DOMAIN:
-      return { label: 'Domain', icon: '🏠' };
+      return { label: 'Domain', icon: '' };
     case IOCType.FILE:
-      return { label: 'File', icon: '📄' };
+      return { label: 'File', icon: '' };
     default:
-      return { label: 'Unknown', icon: '❓' };
+      return { label: 'Unknown', icon: '' };
   }
 }
 
